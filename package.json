@@ -1,0 +1,28 @@
+{
+	"name": "matrixjs",
+	"description": "A JavaScript utility library for working with mathematical matrices",
+	"version": "0.0.0",
+	"author": "Angus Gibbs (http://angusgibbs.com)",
+	"homepage": "http://angusgibbs.github.com/matrix/",
+	"respository": {
+		"type": "git",
+		"url": "git://github.com/angusgibbs/matrix.git"
+	},
+	"bugs": {
+		"url": "http://github.com/angusgibbs/matrix/issues"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://github.com/angusgibbs/matrix/blob/master/LICENSE"
+		}
+	],
+	"main": "lib/matrix",
+	"dependencies": {
+
+	},
+	"devDependencies": {
+		"mocha": "1.4.x",
+		"expect.js": "0.1.x"
+	}
+}
