@@ -3,7 +3,7 @@
 ## About
 
 [Matrix.js](http://angusgibbs.github.com/matrix/) is a JavaScript utility library
-for working with [matrices](http://wikipedia.org/wiki/Matrix_(Mathematics)). It
+for working with [matrices](http://wikipedia.org/wiki/Matrix_(Mathematics\)). It
 currently supports:
 
 * Adding matrices
