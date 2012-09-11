@@ -29,6 +29,7 @@ Matrix also works with AMD loaders, such as [RequireJS](http://requirejs.org). J
 require('path/to/matrix.js', function(Matrix) {
 	// Do stuff with Matrix here
 });
+```
 
 ## Creating a Matrix object
 
