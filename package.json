@@ -3,7 +3,7 @@
 	"description": "A JavaScript utility library for working with mathematical matrices",
 	"version": "0.0.0",
 	"author": "Angus Gibbs (http://angusgibbs.com)",
-	"homepage": "http://angusgibbs.github.com/matrix/",
+	"homepage": "http://github.com/angusgibbs/matrix",
 	"respository": {
 		"type": "git",
 		"url": "git://github.com/angusgibbs/matrix.git"

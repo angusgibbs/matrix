@@ -2,7 +2,7 @@
 
 ## Installation
 
-Installing with Matrix is pretty easy. You can [download the latest copy from GitHub](http://angusgibbs.github.com/matrix/matrix.js), or, if you want to use Matrix with [Node.js](http://nodejs.org), install it with [NPM](https://npmjs.org):
+Installing with Matrix is pretty easy. You can [download the latest copy from GitHub](https://raw.github.com/angusgibbs/matrix/master/lib/matrix.js), or, if you want to use Matrix with [Node.js](http://nodejs.org), install it with [NPM](https://npmjs.org):
 
 ```bash
 npm install matrixjs
