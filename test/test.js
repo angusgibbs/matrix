@@ -234,7 +234,7 @@ describe('Matrix', function() {
 			}).to.throwError();
 		});
 
-		it('should not throw an error when set to false', function() {
+		it('should not throw an error when set to true', function() {
 			Matrix.silent = true;
 
 			expect(function() {

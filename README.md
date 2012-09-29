@@ -14,7 +14,7 @@ currently supports:
 * Raising a *n* by *n* matrix to the *x<sup>th</sup>* power
 * Multiplying each element in the matrix by a scalar
 
-For more information, see the [docs](https://github.com/angusgibbs/matrix/blob/master/docs/getting_started.md).
+For more information (including an installation guide), see the [docs](https://github.com/angusgibbs/matrix/blob/master/docs/getting_started.md).
 
 ## Contributing
 
@@ -23,3 +23,25 @@ Patches welcome, just make sure there are matching unit tests. Tests use
 One particular feature that still needs to be implemented is finding the inverse
 of a matrix. I have an implementation that can invert either a 2 by 2 or a 3 by 3 matrix,
 but I am still looking for how to invert a *n* by *n* matrix.
+
+## License
+
+Copyright (C) 2012 by Angus Gibbs
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
