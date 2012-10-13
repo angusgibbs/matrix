@@ -4,6 +4,7 @@
 	"version": "0.0.1",
 	"author": "Angus Gibbs (http://angusgibbs.com)",
 	"homepage": "http://github.com/angusgibbs/matrix",
+	"keywords": ["matrix", "math", "determinant", "scalar", "inverse"],
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/angusgibbs/matrix.git"
@@ -18,9 +19,6 @@
 		}
 	],
 	"main": "lib/matrix",
-	"dependencies": {
-
-	},
 	"devDependencies": {
 		"mocha": "1.4.x",
 		"expect.js": "0.1.x"
