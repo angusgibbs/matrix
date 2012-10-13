@@ -1,6 +1,6 @@
 # Matrix#subtract(*matrix*)
 
-`Matrix#subtract()` accepts **one** parameter, a two-dimensional array or Matrix object.
+`Matrix#subtract()` accepts an unlimited number of parameters. Each of these parameters must be a two-dimensional array or a Matrix object.
 
 **This method modifies the current Matrix object.**
 
@@ -27,6 +27,9 @@ var m2 = new Matrix([
 ]);
 
 m1.subtract(m2);
+
+// #subtract() accepts multiple parameters
+m1.subtract(m2, [[4,3],[2,1]]);
 
 // This will throw an error because the matrix to subtract has different dimensions
 m1.subtract(new Matrix(3, 3));

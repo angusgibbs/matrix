@@ -30,10 +30,10 @@ var m2 = new Matrix([
 m1.multiply(m2);
 
 // #multiply() also accepts a two-dimensional array
-m1.multiply(new Matrix([
+m1.multiply([
 	[1, 2, 3],
 	[4, 5, 6]
-]));
+]);
 
 // will throw an error if the argument passed is not a valid Matrix object
 m1.multiply('hi');
