@@ -13,16 +13,15 @@ currently supports:
 * Creating a *n* by *n* identity matrix
 * Raising a *n* by *n* matrix to the *x<sup>th</sup>* power
 * Multiplying each element in the matrix by a scalar
+* Checking two matrices for equivalence
+* Inverting a matrix
 
 For more information (including an installation guide), see the [docs](https://github.com/angusgibbs/matrix/blob/master/docs/getting_started.md).
 
 ## Contributing
 
 Patches welcome, just make sure there are matching unit tests. Tests use
-[mocha](http://visionmedia.github.com/mocha/) with [expect.js](https://github.com/LearnBoost/expect.js).
-One particular feature that still needs to be implemented is finding the inverse
-of a matrix. I have an implementation that can invert either a 2 by 2 or a 3 by 3 matrix,
-but I am still looking for how to invert a *n* by *n* matrix.
+[mocha](http://visionmedia.github.com/mocha/) with [expect.js](https://github.com/LearnBoost/expect.js). To install, just `cd` into the directory and run `npm install`.
 
 ## License
 
