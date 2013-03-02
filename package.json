@@ -1,7 +1,7 @@
 {
 	"name": "matrixjs",
 	"description": "A JavaScript utility library for working with mathematical matrices",
-	"version": "0.0.1",
+	"version": "1.0.2",
 	"author": "Angus Gibbs (http://angusgibbs.com)",
 	"homepage": "http://github.com/angusgibbs/matrix",
 	"keywords": ["matrix", "math", "determinant", "scalar", "inverse"],
