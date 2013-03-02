@@ -77,6 +77,8 @@ Once you have created your Matrix object, these methods are available to you:
 * [raise](raise.md): Raises the current matrix to the *x<sup>th</sup>* power
   * `raise` comes with a couple helper functions&mdash;calling `square()` is the same thing as calling `raise(2)`, and calling `cube()` is the same thing as calling `raise(3)`
 * [scalar](scalar.md): Multiplies each element in the matrix by a scalar
+* [inverse](inverse.md): Inverts an *n* by *n* matrix
+* [equals](equals.md): Compares against another matrix
 
 ### Important note about all Matrix methods
 

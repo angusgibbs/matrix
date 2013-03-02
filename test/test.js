@@ -210,6 +210,39 @@ describe('Matrix', function() {
 		});
 	});
 
+	describe('#inverse()', function() {
+		it('should invert a matrix', function() {
+			expect(new Matrix([
+				[2, 0, -1],
+				[2, 1,  1],
+				[3, 4,  4]
+			]).inverse().toArray()).to.eql([
+				[ 0,   .8, -.2],
+				[ 1, -2.2,  .8],
+				[-1,  1.6, -.4]
+			]);
+		});
+	});
+
+	describe('#equals()', function() {
+		it('should return true if the two matrices are equal', function() {
+			expect(m1.equals(m1.clone())).to.be(true);
+		});
+
+		it('should return false if the two matrices are not equal', function() {
+			expect(m1.equals(m3.clone())).to.be(false);
+		});
+
+		it('should return false if the dimensions are not the same', function() {
+			expect(m1.equals(m2.clone())).to.be(false);
+		});
+
+		it('should accept an array', function() {
+			expect(m1.equals(m1.toArray())).to.be(true);
+			expect(m1.equals(m3.toArray())).to.be(false);
+		});
+	});
+
 	describe('Matrix.identity', function() {
 		it('should create an identity matrix of any size', function() {
 			expect(new Matrix.identity(2).toArray()).to.eql([
@@ -240,6 +273,37 @@ describe('Matrix', function() {
 			expect(function() {
 				m2.raise(2);
 			}).to.not.throwError();
+		});
+	});
+
+	describe('#_setData()', function() {
+		it('should accept a two dimensional array', function() {
+			expect(m1._setData([[1,2], [3,4]]).toArray()).to.eql([[1,2], [3,4]]);
+		});
+
+		it('should accept a matrix object', function() {
+			expect(m1._setData(m2).toArray()).to.eql([
+				[2, 1],
+				[1, 1],
+				[3, 1]
+			]);
+		});
+
+		it('should accept a function that takes the row and column numbers as parameters', function() {
+			expect(m1._setData(function(row, col) {
+				return row * col;
+			}).toArray()).to.eql([
+				[0, 0, 0],
+				[0, 1, 2],
+				[0, 2, 4]
+			]);
+		});
+
+		it('should update the row and column count of the matrix', function() {
+			m1._setData([[1,2], [3,4]]);
+
+			expect(m1.rows).to.equal(2);
+			expect(m1.cols).to.equal(2);
 		});
 	});
 });
