@@ -212,6 +212,7 @@ describe('Matrix', function() {
 
 	describe('#inverse()', function() {
 		it('should invert a matrix', function() {
+			// Test against a precomputed inverse
 			expect(new Matrix([
 				[2, 0, -1],
 				[2, 1,  1],
@@ -221,6 +222,27 @@ describe('Matrix', function() {
 				[ 1, -2.2,  .8],
 				[-1,  1.6, -.4]
 			]);
+
+			// Generate a 20x20 array of random numbers
+			var data = [];
+			for (var i = 0; i < 20; i++) {
+				data[i] = [];
+				for (var j = 0; j < 20; j++) {
+					data[i][j] = Math.floor(Math.random() * 101);
+				}
+			}
+
+			// Invert the matrix and multiply it by itself
+			var original = new Matrix(data);
+			var inverted = original.clone().inverse();
+			var product = original.multiply(inverted);
+
+			// Check if it equals the identity matrix
+			for (var i = 0; i < 20; i++) {
+				for (var j = 0; j < 20; j++) {
+					expect(Math.abs((i === j ? 1 : 0) - product[i][j])).to.be.lessThan(.0000001);
+				}
+			}
 		});
 	});
 
