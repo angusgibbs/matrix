@@ -171,6 +171,18 @@ describe('Matrix', function() {
 			}).to.throwError();
 		});
 
+		it('should invert the matrix if the power is -1', function() {
+			expect(new Matrix([
+				[2, 0, -1],
+				[2, 1,  1],
+				[3, 4,  4]
+			]).raise(-1).toArray()).to.eql([
+				[ 0,   .8, -.2],
+				[ 1, -2.2,  .8],
+				[-1,  1.6, -.4]
+			]);
+		});
+
 		it('should throw an error if the power is less than 2', function() {
 			expect(function() {
 				m1.raise(1);
