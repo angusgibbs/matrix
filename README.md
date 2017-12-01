@@ -21,7 +21,7 @@ For more information (including an installation guide), see the [docs](https://g
 ## Contributing
 
 Patches welcome, just make sure there are matching unit tests. Tests use
-[mocha](http://visionmedia.github.com/mocha/) with [expect.js](https://github.com/LearnBoost/expect.js). To install, just `cd` into the directory and run `npm install`.
+[mocha](http://mochajs.org/) with [expect.js](https://github.com/LearnBoost/expect.js). To install, just `cd` into the directory and run `npm install`.
 
 ## License
 
